@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.Autogyro.Notification">
+
+  <!--<TextView
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_weight="1"
+      android:layout_gravity="center|left"
+      android:gravity="center|left"
+      style="@android:style/TextAppearance.StatusBar.EventContent.Title"
+      android:textColor="@color/text_secondary"
+      android:textAllCaps="true"
+      android:layout_marginLeft="@dimen/notification_margin_horizontal"
+      android:text="@string/app_name"
+      />-->
+
+    <Button
+      android:id="@+id/rotate_left"
+
+      android:layout_alignParentTop="true"
+      android:layout_alignParentStart="true"
+
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:layout_gravity="center"
+
+      android:layout_marginStart="@dimen/notification_margin_buttons"
+
+      style="?android:attr/borderlessButtonStyle"
+
+      android:text="@string/rotate_left_button"
+      android:drawableStart="@drawable/ic_rotate_left"
+      />
+
+  <Button
+      android:id="@+id/rotate_right"
+
+      android:layout_alignParentTop="true"
+      android:layout_toEndOf="@id/rotate_left"
+
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:layout_gravity="center"
+
+      style="?android:attr/borderlessButtonStyle"
+
+      android:text="@string/rotate_right_button"
+      android:drawableStart="@drawable/ic_rotate_right"
+      />
+
+  <Button
+      android:id="@+id/flip"
+
+      android:layout_alignParentTop="true"
+      android:layout_toEndOf="@id/rotate_right"
+
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:layout_gravity="center"
+
+      style="?android:attr/borderlessButtonStyle"
+
+      android:text="@string/flip_button"
+      android:drawableStart="@drawable/ic_flip"
+      />
+
+  <ImageButton
+      android:id="@+id/settings"
+
+      android:layout_alignParentTop="true"
+      android:layout_alignParentEnd="true"
+
+      android:layout_width="64dp"
+      android:layout_height="match_parent"
+      android:layout_gravity="center"
+
+      android:layout_marginEnd="@dimen/notification_margin_buttons"
+
+      style="?android:attr/borderlessButtonStyle"
+
+      android:alpha="0.54"
+
+      android:src="@drawable/ic_settings"
+      />
+
+  <!--
+
+  <ImageButton
+      android:id="@id/stop"
+
+      android:layout_alignParentTop="true"
+      android:layout_alignParentEnd="true"
+
+      android:layout_width="48dp"
+      android:layout_height="match_parent"
+      android:layout_gravity="center"
+
+      style="?android:attr/borderlessButtonStyle"
+
+      android:alpha="0.54"
+
+      android:src="@drawable/ic_clear"
+      />-->
+
+</RelativeLayout>

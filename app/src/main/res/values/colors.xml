@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="primary">#263238</color>
+  <color name="primaryDark">#21272b</color>
+  <color name="accent">#009688</color>
+
+  <color name="bar">#37474f</color>
+
+  <color name="switch_track_off">#6b777d</color>
+
+  <color name="transparent">#00009688</color>
+  <color name="black">#000000</color>
+  <color name="white">#ffffff</color>
+  <color name="text_primary">#dd000000</color>
+  <color name="text_secondary">#89000000</color>
+</resources>

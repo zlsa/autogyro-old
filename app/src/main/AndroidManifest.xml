@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.zlsadesign.autogyro">
+
+  <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+  <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+  <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+
+  <application
+      android:allowBackup="true"
+
+      android:icon="@mipmap/ic_launcher"
+      android:label="@string/app_name"
+
+      android:supportsRtl="true"
+
+      android:theme="@style/AppTheme"
+      >
+
+    <activity
+        android:name=".SettingsActivity"
+        android:label="@string/app_name"
+        android:launchMode="singleInstance">
+
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+        <category android:name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+
+    </activity>
+
+    <activity
+        android:name=".DebugActivity"
+        android:label="@string/app_label_debug"
+        android:launchMode="singleInstance">
+    </activity>
+
+    <activity android:name=".OverlayPermissionsActivity"/>
+
+    <receiver
+        android:name=".AutogyroBroadcastReceiver"
+        android:enabled="true">
+      <intent-filter>
+        <action android:name="android.intent.action.BOOT_COMPLETED"/>
+        <action android:name="com.zlsadesign.autogyro.START"/>
+        <action android:name="com.zlsadesign.autogyro.STOP"/>
+        <action android:name="com.zlsadesign.autogyro.FLIP"/>
+        <action android:name="com.zlsadesign.autogyro.ROTATE_LEFT"/>
+        <action android:name="com.zlsadesign.autogyro.ROTATE_RIGHT"/>
+      </intent-filter>
+    </receiver>
+
+    <service android:name=".AutogyroService"/>
+
+  </application>
+
+</manifest>

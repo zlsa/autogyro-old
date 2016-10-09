@@ -1,0 +1,29 @@
+<resources>
+
+  <!-- Base application theme. -->
+  <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <!-- Customize your theme here. -->
+    <item name="colorPrimary">@color/primary</item>
+    <item name="colorPrimaryDark">@color/primaryDark</item>
+    <item name="colorAccent">@color/accent</item>
+  </style>
+
+  <style name="Theme.Autogyro.Notification" parent="AppTheme">
+    <item name="colorControlHighlight">@color/accent</item>
+  </style>
+
+  <style name="BarTitle">
+    <item name="android:textColor">@color/white</item>
+    <item name="android:fontFamily">sans-serif-medium</item>
+    <item name="android:textSize">20sp</item>
+  </style>
+
+  <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+  <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+  <style name="AppTheme.WhiteButton">
+    <item name="colorButtonNormal">@color/white</item>
+  </style>
+
+</resources>

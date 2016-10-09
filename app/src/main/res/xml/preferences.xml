@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <!--<CheckBoxPreference
+      android:title="@string/preference_start_on_boot"
+      android:defaultValue="false"
+      android:key="start_on_boot" />-->
+
+  <CheckBoxPreference
+      android:title="@string/preference_swap_portrait_landscape"
+      android:defaultValue="false"
+      android:key="swap_portrait_landscape" />
+
+  <CheckBoxPreference
+      android:title="@string/preference_invert_portrait"
+      android:defaultValue="false"
+      android:key="invert_portrait" />
+
+  <CheckBoxPreference
+      android:title="@string/preference_invert_landscape"
+      android:defaultValue="false"
+      android:key="invert_landscape" />
+
+  </PreferenceScreen>

@@ -1,0 +1,38 @@
+<resources>
+  <string name="app_name">Autogyro</string>
+  <string name="app_label_debug">Autogyro Debug</string>
+  <string name="app_label_help">Help &amp; Feedback</string>
+
+  <string name="menu_about">Help &amp; feedback</string>
+
+  <string name="flip_button">Flip</string>
+  <string name="rotate_left_button">Left</string>
+  <string name="rotate_right_button">Right</string>
+
+  <string name="toggle_service">Toggle Autogyro</string>
+  <string name="start_service">Start Autogyro</string>
+  <string name="stop_service">Stop Autogyro</string>
+
+  <string name="toggle_on">On</string>
+  <string name="toggle_off">Off</string>
+
+  <string name="preference_start_on_boot">Start Autogyro automatically</string>
+
+  <string name="preference_swap_portrait_landscape">Default to landscape</string>
+
+  <string name="preference_invert_portrait">Invert portrait orientations</string>
+
+  <string name="preference_invert_landscape">Invert landscape orientations</string>
+
+  <string name="toast_no_email">Couldn\'t send email; do you have an email app installed?</string>
+
+  <string name="send_feedback">Send Feedback</string>
+
+  <string name="app_description">Autogyro locks the orientation of your screen and allows you to change
+    the orientation with a persistent notification. It\'s great for using your device while charging or
+  wi"th headphones plugged in.\n\nMake sure you\'ve enabled Auto-Rotate in Display Settings to allow
+    Autogyro to rotate your screen!</string>
+
+  <string name="ok">OK</string>
+
+</resources>

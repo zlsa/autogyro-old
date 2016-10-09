@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <android.support.v7.widget.Toolbar
+      android:id="@+id/toolbar"
+      android:layout_height="?attr/actionBarSize"
+      android:layout_width="match_parent"
+      android:minHeight="?attr/actionBarSize"
+      android:background="?attr/colorPrimary"
+      app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+      app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+  </android.support.v7.widget.Toolbar>
+
+  <RelativeLayout
+    android:id="@+id/toggle_bar"
+
+    android:background="@color/bar"
+
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/switch_bar_height"
+
+    android:clickable="true"
+    >
+
+    <TextView
+        android:id="@+id/toggle_text"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+
+        style="@style/BarTitle"
+        android:text="@string/toggle_off"
+
+        android:gravity="center"
+
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/bar_text_margin"
+        />
+
+    <Switch
+        android:id="@+id/toggle_switch"
+
+        android:clickable="false"
+        android:duplicateParentState="true"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginEnd="@dimen/bar_switch_margin"
+        />
+
+  </RelativeLayout>
+
+  <FrameLayout
+    android:id="@+id/fragment_frame"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+      />
+
+</LinearLayout>
